@@ -6,30 +6,30 @@
     <div class="wrapper">
         
     <!---FIRST BLOCK PROMO NAME AND PHOTO--->
-        <div class="block__erste_name">
+        <div class="block__1-name">
 
         </div>
 
 
 
     <!-- THREE BLOCKS PROMO --->
-        <div class="block__zweite-promo">
+        <div class="block__2-promo">
 
         </div>
 
 
     <!--- ABOUT US AND WHAT WE DO ---->
-        <div class="block__dritte-wedo">
+        <div class="block__3-wedo">
 
         </div>
 
     <!-- CATALOGUE ABOUT US --->
-        <div class="block__vierte-catalogue">
+        <div class="block__4-catalogue">
 
         </div>
 
     <!--- CONNECT WITH US BLOCK--->
-        <div class="block__funfte-connect">
+        <div class="block__5-connect">
 
         </div>
 
