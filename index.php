@@ -27,16 +27,39 @@
     <!-- THREE BLOCKS PROMO --->
         <div class="block__2-promo">
             <div class="block__2-promo-wrapper">
-                <div class="block__2-promo-1"></div>
-                <div class="block__2-promo-2"></div>
-                <div class="block__2-promo-3"></div>
+                <div class="block__2-promo-1">
+                    <div class="block__2-promo-1-image"></div>
+                    <div class="block__2-promo-1-text">
+                        Все подарки созданы в ручную 
+                    </div>
+                </div>
+                <div class="block__2-promo-2">
+                <div class="block__2-promo-1-image"></div>
+                    <div class="block__2-promo-1-text">
+                        Лучшее качество 
+                    </div>
+                </div>
+                <div class="block__2-promo-3">
+                <div class="block__2-promo-1-image"></div>
+                    <div class="block__2-promo-1-text">
+                        Уникальный дизайн специально по вашему заказу 
+                    </div>
+                </div>
             </div>
         </div>
     <!----------------------------------------->
 
     <!--- ABOUT US AND WHAT WE DO ---->
         <div class="block__3-wedo">
+            <div class="block__3-wedo-name">О нас</div>
+            <div class="block__3-wedo_wrapper">
+                <div class="block__3-wedo-1">
 
+                </div>
+                <div class="block__3-wedo-2">
+
+                </div>
+            </div>
         </div>
 
     <!-- CATALOGUE OF ELEMENTS  --->
