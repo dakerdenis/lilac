@@ -7,5 +7,13 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images_page/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/swiper.css">
+        <!-- Link Swiper's CSS -->
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/catalog.css">
 </head>
 <body>
