@@ -17,7 +17,6 @@
             </div>
         </div>
     </div>
-
     <!----------------------------------------->
     <!-- THREE BLOCKS PROMO --->
     <div class="block__2-promo">
@@ -113,14 +112,14 @@
 
     <!-- CATALOGUE OF ELEMENTS  --->
     <div class="block__4-catalogue">
-        <div class="catalog_wrapper">
-            
-        </div>
+            <?php
+                include "./include/catalog.php";
+            ?>
     </div>
 
     <!--- CONNECT WITH US BLOCK--->
     <div class="block__5-connect">
-
+    
     </div>
 
 
