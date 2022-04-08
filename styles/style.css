@@ -13,6 +13,10 @@ font-family: 'Roboto';
 a{
     text-decoration: none;
 }
+p {
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -150,6 +154,7 @@ a{
     color: #3E0917;
     text-align: center;
     padding: 15px 20px 15px 20px;
+
 }
 .block__3-wedo-name {
     font-size: 35px;
@@ -163,6 +168,7 @@ a{
 }
 .block__3-wedo-1 {
     flex: 0 0 40%;
+
 }
 .block__3-wedo-1-imag{
     width: 100%;
@@ -171,9 +177,11 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .block__3-wedo-2 {
     flex: 0 0 50%;
+
 }
 .block__3-wedo-2  p {
     line-height: 26px;
