@@ -80,6 +80,10 @@
             <span>Подарок созданный в ручную - уникальный.</span>
         </div>
     </div>
+
+
+
+    
     <!--- ABOUT US AND WHAT WE DO ---->
     <div class="block__3-wedo">
         <div class="block__3-wedo-name">О нас</div>
@@ -87,7 +91,7 @@
             <div class="block__3-wedo-1">
                 <div class="block__3-wedo-1-imag"></div>
             </div>
-            <div class="block__3-wedo-2">
+            <div class="block__3-wedo-2" style="">
                 <p>
                     Декупаж (фр. découpage — «резка») — техника декорирования различных предметов, основанная 
                     на присоединении рисунка, картины или орнамента (обычно вырезанного) к предмету и 
@@ -119,12 +123,34 @@
 
     <!--- CONNECT WITH US BLOCK--->
     <div class="block__5-connect">
-    
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quis modi suscipit doloremque facere porro esse numquam unde harum minima molestiae, quos magnam veritatis velit! Ea consectetur tempore veritatis rerum.
     </div>
 
 
 
-    <!---FOOTER END OF PAGE--------------- -->
-    <?php
-    include "./include/footer.php"
-    ?>
+    <div class="block__footer__end">
+    Lorem
+</div>
+</div><!-- WRAPPER ENDS-->
+
+<script src="https://kit.fontawesome.com/5480a04e88.js" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</body>
+</html>
