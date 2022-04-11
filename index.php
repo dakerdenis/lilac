@@ -123,14 +123,54 @@
 
     <!--- CONNECT WITH US BLOCK--->
     <div class="block__5-connect">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quis modi suscipit doloremque facere porro esse numquam unde harum minima molestiae, quos magnam veritatis velit! Ea consectetur tempore veritatis rerum.
+        <div class="connect__with__me"> 
+            <p class="connect__p">
+            Свяжитесь со мной !
+            </p>
+        </div>
+
+        <div class="connect__with__me_wrapper">
+            <div class="connect__with_me_1">
+                <p class="connect__with__me_1-p">
+                Длительность выполнения заказа зависит от сложности работы, <br>  от 1 до 3х дней.
+                </p>
+                <p class="connect__with__me_1-p">
+                Вы можете выбрать что то из имеющегося в каталоге,либо заказать уникальный дизайн и я воплощу это в жизнь.
+                </p>
+                <p class="connect__with__me_1-p2">
+                Доставка по метро абсолютно бесплатно !
+                </p>
+                <img src="./images_page/21.jpg" alt="" class="connect__with_me__img">
+            </div>
+
+            
+            <div class="connect__with_me_1">
+            <p class="connect__with__me_1-p">
+            Свяжитесь со мной любым удобным для вас способом, либо сделайте заказ напрямую с нашего каталога !
+                </p>
+            <p class="connect__with__me_1-p3">
+            +994 50 323 54 22
+                </p>
+                <p class="connect__with__me_1-p4">
+                lilac@daker.website
+                </p>
+
+                <div class="image__wrapper__contact_with_me">
+                        <a href="" class="connect__with__me_1-link">
+                            <img src="./images_page/insta.png" alt="">
+                        </a>
+                        <a href="" class="connect__with__me_1-link">
+                            <img src="./images_page/Icon-WhatsApp-PNG.png" alt="" srcset="">
+                        </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
+    <?php include "./include/footer.php"; ?>
 
-    <div class="block__footer__end">
-    Lorem
-</div>
 </div><!-- WRAPPER ENDS-->
 
 <script src="https://kit.fontawesome.com/5480a04e88.js" crossorigin="anonymous"></script>
