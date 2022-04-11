@@ -1,26 +1,28 @@
 <div class="block__footer__end">
-        test 345
+
+    <div class="footer__content_wrapper">
+        <div class="footer__content__text">
+
+        </div>
+
+        <div class="footer__content__links">
+            <a href="" class="footer__content_link"></a>
+            <a href="" class="footer__content_link"></a>
+            <a href="" class="footer__content_link"></a>
+            <a href="" class="footer__content_link"></a>
+        </div>
     </div>
-    </div><!-- WRAPPER ENDS-->
 
-    <script src="https://kit.fontawesome.com/5480a04e88.js" crossorigin="anonymous"></script>
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <div class="block__footer__end_wrapper">
+        <div class="block__placeholder">
+            &nbsp;
+        </div>
+        <div class="lilac__block">
+            lilac_art_n 2019-2021 ©
+        </div>
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-</body>
-</html>
+        <div class="created__by__block">
+            created by <a class="created__by__block-link" href="https://daker.website">DAKER</a>
+        </div>
+    </div>
+</div>
