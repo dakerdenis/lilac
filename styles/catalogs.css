@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+/*  font-family: "Caveat", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap");
+/* РћР±РЅСѓР»РµРЅРёРµ */
 .catalog_wrapper{
     max-width: 1400px;
     height: 400px;
     margin: 0 auto;
     margin-bottom: 250px;
+
 }
 .catalog__name {
 
@@ -14,12 +20,15 @@
 }
 .catalog__p {
     color: #3E0917;
+    font-family: 'Montserrat';
     font-size: 29px;
+    font-weight: 600;
 
 }
 .catalog__text{
     margin-top: 15px;
     line-height: 27px;
+    text-align: center;
 }
 .swiper {
 }
@@ -77,17 +86,21 @@
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #3E0917;
+    padding-bottom: 25px;
 }
 .catalog__link {
-    color: #3E0917;
+    color: #fff;
     font-weight: 500;
-    background-color: #fff;
-    border: 2px solid #3E0917;
-    padding: 5px 20px 5px 20px;
+    background-color: #3E0917;
+    border: 2px solid #fff;
+    padding: 15px 85px 15px 85px;
     border-radius: 7px;
-
+    font-size: 25px;
+    font-family: 'Montserrat';
 }
 .catalog__link:hover{
-    color: #fff;
-    background-color: #3E0917;
+    color: #3E0917;
+    background-color: #fff;
+    border: 2px solid #3E0917;
 }
