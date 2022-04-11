@@ -9,10 +9,12 @@
 
     <div class="catalog__name">
         <p class="catalog__p">
-            Каталог
+            Откройте для себя новое
         </p>
+
         <p class="catalog__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea itaque eveniet molestiae quibusdam nihil laudantium quasi consequuntur modi quos, tenetur provident hic numquam fuga totam autem, accusamus quidem libero.
+            У нас большой выбор различной продукции на любой вкус. <br>
+            В ассортименте большое количество изделий, выберите из более чем 50ти продуктов в нашем каталоге !
         </p>
     </div>
     <!-- Swiper -->
@@ -121,6 +123,6 @@
 
     </div>
     <div class="catalog__button">
-        <a href="./include/full_catalog.php" class="catalog__link">К полному каталогу</a>
+        <a href="./include/full_catalog.php" class="catalog__link">Полный каталог </a>
     </div>
 </div>
