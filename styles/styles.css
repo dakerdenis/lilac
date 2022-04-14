@@ -175,6 +175,9 @@ p {
     font-family: 'Montserrat';
     font-size: 29px;
     font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
 .block__3-wedo_wrapper {
     padding-top: 25px;
@@ -348,4 +351,7 @@ p {
     color: #3E0917;
     font-family: 'Montserrat';
     font-weight: 600;
+}
+.block__2-promo-2{
+
 }
