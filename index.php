@@ -1,9 +1,10 @@
 <?php include "./include/header.php"; ?>
-<?php include "./include/navigation.php"; ?>
+
 
 
 <!---- ......WRAPPER----->
 <div class="wrapper">
+<?php include "./include/navigation.php"; ?>
 
     <!---FIRST BLOCK PROMO NAME AND PHOTO--->
     <div class="block__1-name">
