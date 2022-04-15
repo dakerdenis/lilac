@@ -4,7 +4,7 @@
 
 <!---- ......WRAPPER----->
 <div class="wrapper">
-<?php include "./include/navigation.php"; ?>
+  <?php include "./include/navigation.php"; ?>
 
     <!---FIRST BLOCK PROMO NAME AND PHOTO--->
     <div class="block__1-name">
@@ -13,7 +13,7 @@
             <!-- DIV WITH NAME AND DESC-->
             <div class="block__name__text">
                 <span class="block__anme-span block__name__text-name">Lilac handmade</span>
-                <span class="block__anme-span block__name__text-des">♥ Подарки ручной работы ♥</span>
+                <span class="block__anme-span block__name__text-des"> Подарки ручной работы </span>
                 <span class="block__anme-span block__name__text-by">By Narmina Huseynli</span>
             </div>
         </div>
@@ -193,5 +193,7 @@
     },
   });
 </script>
+
+<script src="./js/script.js"></script>
 </body>
 </html>

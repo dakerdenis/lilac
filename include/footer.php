@@ -4,10 +4,10 @@
 
 
         <div class="footer__content__links">
-            <a href="" class="footer__content_link">
+            <a href="./about.php" class="footer__content_link">
                 О нас
             </a>
-            <a href="" class="footer__content_link">
+            <a href="./policy.php" class="footer__content_link">
                 Политика конфиденциальности
             </a>
             <a href="" class="footer__content_link">
