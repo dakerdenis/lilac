@@ -13,7 +13,7 @@
             <!-- DIV WITH NAME AND DESC-->
             <div class="block__name__text">
                 <span class="block__anme-span block__name__text-name">Lilac handmade</span>
-                <span class="block__anme-span block__name__text-des">♥ Подарки ручной работы ♥</span>
+                <span class="block__anme-span block__name__text-des"> Подарки ручной работы </span>
                 <span class="block__anme-span block__name__text-by">By Narmina Huseynli</span>
             </div>
         </div>

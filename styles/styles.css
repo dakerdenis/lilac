@@ -45,12 +45,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(250 , 225, 221, 0.75);
-    
+    background-color: rgba(250 , 225, 221, 0.55);
+
+   
 }
 .block__name__text {
     background-color: #fff0f3;
     height: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -175,9 +177,7 @@ p {
     font-family: 'Montserrat';
     font-size: 29px;
     font-weight: 600;
-    position: sticky;
-    top: 0;
-    z-index: 20;
+
 }
 .block__3-wedo_wrapper {
     padding-top: 25px;
