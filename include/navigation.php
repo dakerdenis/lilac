@@ -1,14 +1,13 @@
 <header class="header">
     <div class="header__container">
-                <a href="" class="header__logo">LILAC ART</a>
+                <a href="./index.php" class="header__logo">LILAC ART</a>
+
                 <div class="header__menu menu">
-                    <div class="menu__icon">
-                        <span></span>
-                    </div>
+
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li><a data-goto=".page__section_1" href="#" class="menu__link">главная</a></li>
-                            <li><a data-goto=".page__section_2" href="#" class="menu__link">О нас</a></li>
+                            <li><a data-goto=".page__section_2" href="./about.php" class="menu__link">О нас</a></li>
                             <li><a data-goto=".page__section_3" href="#" class="menu__link">Каталог</a></li>
                             <li><a data-goto=".page__section_4" href="#" class="menu__link">Контакты</a></li>
                             <li>

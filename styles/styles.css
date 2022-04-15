@@ -73,6 +73,10 @@ p {
 .block__name__text-by {
     font-size: 40px;
     font-family: 'Allison', cursive;
+
+    position: sticky;
+    top: 50px;
+    z-index: 20;
 }
 .block__photo__1 {
     width: 100%;

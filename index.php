@@ -4,7 +4,7 @@
 
 <!---- ......WRAPPER----->
 <div class="wrapper">
-<?php include "./include/navigation.php"; ?>
+  <?php include "./include/navigation.php"; ?>
 
     <!---FIRST BLOCK PROMO NAME AND PHOTO--->
     <div class="block__1-name">
