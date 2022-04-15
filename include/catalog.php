@@ -123,6 +123,6 @@
 
     </div>
     <div class="catalog__button">
-        <a href="./include/full_catalog.php" class="catalog__link">Полный каталог </a>
+        <a href="./full_catalog.php" class="catalog__link">Полный каталог </a>
     </div>
 </div>
