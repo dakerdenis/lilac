@@ -17,4 +17,5 @@
     <link rel="stylesheet" href="./styles/catalogs.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/full_catalog.css">
 <body>

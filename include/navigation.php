@@ -6,9 +6,9 @@
 
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li><a data-goto=".page__section_1" href="#" class="menu__link">главная</a></li>
+                            <li><a data-goto=".page__section_1" href="./index.php" class="menu__link">главная</a></li>
                             <li><a data-goto=".page__section_2" href="./about.php" class="menu__link">О нас</a></li>
-                            <li><a data-goto=".page__section_3" href="#" class="menu__link">Каталог</a></li>
+                            <li><a data-goto=".page__section_3" href="./full_catalog.php" class="menu__link">Каталог</a></li>
                             <li><a data-goto=".page__section_4" href="#" class="menu__link">Контакты</a></li>
                             <li>
                                 <a href="" class="menu__link">Язык</a>

@@ -1,0 +1,44 @@
+.catalog__description{
+
+}
+.main__catalog__wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+.catalog__wrapper__element {
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.c__table__image {
+    width: 100%;
+    height: 350px;
+    background-color: aquamarine;
+    border-radius: 15px 15px 0px 0px;
+}
+.c__table__image-image {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.c__table__wrapper {
+}
+.c__table__title {
+}
+.c_table__price_link_wrapper {
+}
+.c__table__price {
+}
+.c__table__link {
+}
+.c__table__link-a {
+}
