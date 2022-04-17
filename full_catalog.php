@@ -36,10 +36,10 @@ $result = mysqli_query($connection, $query);
 
         ?>
             <div class="catalog__wrapper__element">
-                <div class="c__table__image">
+
                     <div class="c__table__image-image" style="background-image: url('./img/<?php echo $table_image ?>');">
                     </div>
-                </div>
+
 
                 <div class="c__table__wrapper">
                     <div class="c__table__title">
@@ -48,8 +48,9 @@ $result = mysqli_query($connection, $query);
                     <div class="c_table__price_link_wrapper">
                         <div class="c__table__price">
                             <?php
-                            echo $table_price;
+                            echo $table_price  ;
                             ?>
+                            <span class="table_span">AZN</span>
                         </div>
                         <div class="c__table__link">
                             <a href="./element.php?tableid=<?php echo $table__id; ?>" class="c__table__link-a">
@@ -58,6 +59,7 @@ $result = mysqli_query($connection, $query);
                         </div>
                     </div>
                 </div>
+
             </div>
 
 

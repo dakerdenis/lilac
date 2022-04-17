@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap");
+/* РћР±РЅСѓР»РµРЅРёРµ */
 .catalog__description{
 
 }
@@ -17,7 +19,7 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .catalog__wrapper__element:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -31,6 +33,7 @@
     margin-right: 20px;
 }
 .c__table__image-image {
+    box-shadow: rgba(62, 9, 23, 0.2) 0px 0px 0px 2px inset, rgba(62, 9, 23, 0.9) 0px 0px 0px 1.5px;
     border-radius: 15px 15px 15px 15px;
     width: 300px;
     height: 300px;
@@ -41,16 +44,37 @@
     background-repeat: no-repeat;
 }
 .c__table__wrapper {
+
+    border-radius: 0px 0px 15px 15px;
+    padding: 8px 20px 18px 20px;
 }
 .c__table__title {
+    font-family: 'montserrat';
+    font-weight: 500;
 }
 .c_table__price_link_wrapper {
+    margin-top: 10px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .c__table__price {
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 20px;
 }
 .c__table__link {
 }
 .c__table__link-a {
+    font-family: 'montserrat';
+    color: rgb(62, 9, 23) ;
+    font-weight: 600;
+    border: 2px solid #3E0917;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+}
+.c__table__link-a:hover{
+    background-color: #3E0917;
+    color: #fff;
+    font-weight: 500;
 }
