@@ -19,7 +19,7 @@
 
     <div class="element__plate__wrapper">
         <div class="element__plate_gallery">
-
+            
         </div>
 
         <div class="element__plate__description">
