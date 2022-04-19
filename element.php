@@ -59,7 +59,7 @@
         </div>
 
         <div class="element__plate__buying-option">
-
+            l
         </div>
     </div>
 

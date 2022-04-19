@@ -22,14 +22,18 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .catalog__wrapper__element {
     width: 280px;
     height: 320px;
-    background-color: antiquewhite;
+    background-color: #fff;
     margin-top: 25px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 .catalog__wrapper__image-div {
@@ -40,16 +44,33 @@
     background-repeat: no-repeat;
 }
 
-.c__table__wrapper {}
+.c__table__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+}
+.c_plate__title_price_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.c_plate__title {
+}
+.c_plate__price {
+}
+.c_plate__link_button {
+}
+.c_table_link_button-a {
 
-.c__table__title {}
-
-.c_table__price_link_wrapper {}
-
-.c__table__price {}
-
-.table_span {}
-
-.c__table__link {}
-
-.c__table__link-a {}
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #3E0917;
+    color: #3E0917;
+}
+.c_table_link_button-a:hover{
+    background-color: #3E0917;
+    color: #fff;
+}

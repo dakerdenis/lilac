@@ -25,7 +25,23 @@ $result = mysqli_query($connection, $query);
         <div class="searc__block__wrapper">
             <!--CATEGORIES-->
             <div class="search__block_categories">
-
+                    <div class="search__block_categories-title">
+                        CATEGORIES
+                    </div>
+                    <div class="search__block_categories-list">
+                        <p class="search__block_categories-p">
+                            Тарелки
+                        </p>
+                        <p class="search__block_categories-p">
+                            Кружки
+                        </p>
+                        <p class="search__block_categories-p">
+                            Игрушки
+                        </p>
+                        <p class="search__block_categories-p">
+                            Вазы
+                        </p>
+                    </div>
             </div>
             <!--SORT BY--->
             <div class="search__sort__by">
@@ -58,22 +74,22 @@ $result = mysqli_query($connection, $query);
 
 
         <div class="c__table__wrapper">
-            <div class="c__table__title">
-                <?php echo $table_title; ?>
-            </div>
-            <div class="c_table__price_link_wrapper">
-                <div class="c__table__price">
-                    <?php
-                    echo $table_price  ;
-                    ?>
-                    <span class="table_span">AZN</span>
+                <div class="c_plate__title_price_wrapper">
+                    <div class="c_plate__title">
+                        <?php
+                            echo $table_title;
+                        ?>
+                    </div>
+                    <div class="c_plate__price">
+                        <?php
+                            echo $table_price . " ₼" ;
+                        ?>
+                    </div>
                 </div>
-                <div class="c__table__link">
-                    <a href="./element.php?tableid=<?php echo $table__id; ?>" class="c__table__link-a">
-                        Заказать <?php echo $table__id  ?>
-                    </a>
+
+                <div class="c_plate__link_button">
+                    <a href="" class="c_table_link_button-a">ЗАКАЗАТЬ</a>
                 </div>
-            </div>
         </div>
 
     </div>
