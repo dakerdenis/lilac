@@ -26,32 +26,46 @@ $result = mysqli_query($connection, $query);
             <!--CATEGORIES-->
             <div class="search__block_categories">
                     <div class="search__block_categories-title">
-                        CATEGORIES
+                        КАТЕГОРИИ
                     </div>
                     <div class="search__block_categories-list">
                         <p class="search__block_categories-p">
-                            Тарелки
+                            <a href="#"> <span>Тарелки </span> <span class="arrow__span">&#10095;</span></a>
                         </p>
                         <p class="search__block_categories-p">
-                            Кружки
+                            <a href="#"><span>Кружки</span> <span class="arrow__span">&#10095;</span></a>
                         </p>
                         <p class="search__block_categories-p">
-                            Игрушки
+                            <a href="#"><span>Игрушки</span> <span class="arrow__span">&#10095;</span></a>
                         </p>
                         <p class="search__block_categories-p">
-                            Вазы
+                            <a href="#"><span>Вазы</span> <span class="arrow__span">&#10095;</span></a>
                         </p>
                     </div>
             </div>
+            <form action="">
             <!--SORT BY--->
             <div class="search__sort__by">
 
-            </div>
-            <!--TAGS-->
-            <div class="search__tags">
+                <div class="search__sort__by-name">
+                        Сортировка
+                    </div>
+                    <div class="search__sort__by-container">
+                        <select name="sort_by" id="">
+                        <option value="">Сортировать</option>
+                            <option value="">Сортировка по цене: от низкого к высокому</option>
+                            <option value="">Сортировка по цене: от высокому к низкому</option>
+                            <option value="">Сортировка по дате добавления</option>
+                            <option value="">Сортировка по количеству заказов</option>
+                        </select>
+                    </div>
 
             </div>
+            <!--colors-->
+            <div class="search__colors">
 
+            </div>
+            </form>
         </div>
         <!-- MAIN CATALOG-->
     <div class="main__catalog__wrapper">
