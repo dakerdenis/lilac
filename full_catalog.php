@@ -64,7 +64,9 @@ $result = mysqli_query($connection, $query);
                 </div>
                 <!--colors-->
                 <div class="search__colors">
-
+                    <div class="search__colorw-container">
+                        
+                    </div>
                 </div>
                 <!-- SORT BUTTON-->
                 <div class="search_button">
