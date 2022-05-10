@@ -1,4 +1,81 @@
 <?php include "./include/header.php"; ?>
+<style>
+    
+/*the container must be positioned relative:*/
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+</style>
 
 <?php include "./vendor/db.php" ?>
 
@@ -90,14 +167,16 @@ $elemen__category_id = $row['category_id'];
                 <form action="" method="post">
                     <!-- BUYING PRICE-->
                     <div class="element__buying-option_price">
-                        <?php echo $elemen_price; ?>
+                        <?php echo $elemen_price; ?> ₼
                     </div>
+
                     <!-- AMOUNT OF ELEMENTS -->
                     <div class="element__buying-option_number">
-                        <div class="custom-select" style="width:200px;">
+                        <div class="element__buying_number-flex">
+                            Количество: 
+                        </div>
+                        <div class="custom-select" style="width:100px;">
                             <select>
-                                <option value="0">Количество:</option>
-                                <option value="0">Количество:</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -112,6 +191,11 @@ $elemen__category_id = $row['category_id'];
                                 <option value="12">12</option>
                             </select>
                         </div>
+                    </div>
+                    <!--INFORM BLOCK-->
+                    <div class="element__buying-option_info">
+                        Ваш заказ будет готов в течении 3-4 рабочих дней
+                        Оформите заказ и выберите один из 4х методов доставки !
                     </div>
                     <!-- BUTTON TO BUY -->
                     <div class="element__buying-option_button">
