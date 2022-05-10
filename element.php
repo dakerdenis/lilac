@@ -4,22 +4,23 @@
 
 <?php
 
-    $table__id = $_GET['plate_id'];
+$table__id = $_GET['plate_id'];
 
-    $query = "SELECT * FROM catalog WHERE id = $table__id";
+$query = "SELECT * FROM catalog WHERE id = $table__id";
 
-    $select_info_plate = mysqli_query($connection, $query);
+$select_info_plate = mysqli_query($connection, $query);
 
-    $row = mysqli_fetch_assoc($select_info_plate);
+$row = mysqli_fetch_assoc($select_info_plate);
 
-    $element_id = $row['id'];
-    $element_title = $row['title'];
-    $elemen_price = $row['price'];
-    $elemen_description = $row['description'];
-    $elemen_size = $row['size'];
-    $elemen_color = $row['color'];
-    $elemen_image = $row['image'];
-    $elemen__category_id = $row['category_id'];
+$element_id = $row['id'];
+$element_title = $row['title'];
+$elemen_price = $row['price'];
+$elemen_description = $row['description'];
+$elemen_size = $row['size'];
+$elemen_color = $row['color'];
+$elemen_image = $row['image'];
+$elemen_material = $row['material'];
+$elemen__category_id = $row['category_id'];
 
 ?>
 
@@ -27,66 +28,190 @@
 
 
 <!---- ......WRAPPER----->
-<div  class="wrapper">
+<div class="wrapper">
     <?php include "./include/navigation.php"; ?>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+
     <div class="element__plate__wrapper">
-        <div class="element__plate_gallery">
-            <div class="element__plate__image" style="background-image: url('./img/<?php echo $elemen_image ?>');"></div>
-        </div>
+        <div class="element__plate_flex_wrapper">
+            <div class="element__plate_gallery">
+                <div class="element__plate__image" style="background-image: url('./img/<?php echo $elemen_image ?>');"></div>
+            </div>
 
-        <div class="element__plate__description">
-            <!--ELEMENT NAME--->
-            <div class="element__plate__name">
-            Супер тарелка номер <?php echo $element_id; ?>
-            </div>
-            <!-- ELEMENT PRICE--->
-            <div class="element__plate__price">
-                Стоимость товара: <span class="plate__price-span">
-                <?php echo $elemen_price; ?>        
-            </span> ₼
-            </div>
-            <?php
-                echo $elemen_description;
-            ?>
-            <!--- ELEMENT CHARACTERISTICS--->
-            <div class="element__characters_wrapper">
-                <!-- ELEMENT TYPE--->
-                <div class="element__type__fromDB">
-                    Тип товара: <span class="element__typeof-span"> тарелки</span>
+            <div class="element__plate__description">
+                <!--ELEMENT NAME--->
+                <div class="element__plate__name">
+                    <?php echo $element_title; ?>
                 </div>
-                <!--element SIZE-->
-                <div class="element__plate__size">
-                    25 на 25 сантиметров
+                <!--NUMBER IN CATALOG-->
+                <div class="element__plate__number">
+                    Номер в каталоге: <?php echo $element_id; ?>
                 </div>
-                <!--ELEMENT COLORS--->
-                <div class="element__used_colors">
-                    Используемые цвета: <span class="element__used_colors-span">Красный, синий, зеленый</span>
-                </div>
-                <!-- ELEMENT USED MATERIAL-->
-                <div class="element__used__material">
-                    Используемые материалы: <span class="element__used__material-span">Фарфор, натуральные краски, глина</span>
-                </div>
-                <!--ELEMENT KLEIN DESC--->
-                <div class="element__small__desc">
-                    <p class="element__small__desc-p">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque id nulla suscipit natus debitis nobis laboriosam labore explicabo. Autem saepe sed eum culpa cupiditate sapiente maxime explicabo debitis nisi harum!
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <div class="element__plate__buying-option">
-            l
+
+                <!--- ELEMENT CHARACTERISTICS--->
+                <div class="element__characters_wrapper">
+                    <!-- ELEMENT TYPE--->
+                    <div class="element__type__fromDB">
+                        Тип товара: <span class="element__typeof-span"> тарелки</span>
+                    </div>
+                    <!--element SIZE-->
+                    <div class="element__plate__size">
+                        <?php echo $elemen_size; ?>
+                    </div>
+                    <!--ELEMENT COLORS--->
+                    <div class="element__used_colors">
+                        Используемые цвета: <span class="element__used_colors-span">
+                            <?php echo  $elemen_color; ?>
+                        </span>
+                    </div>
+                    <!-- ELEMENT USED MATERIAL-->
+                    <div class="element__used__material">
+                        Используемые материалы: <span class="element__used__material-span"><?php echo $elemen_material; ?></span>
+                    </div>
+                    <!--ELEMENT KLEIN DESC--->
+                    <div class="element__small__desc">
+                        <p class="element__small__desc-p">
+                            <?php
+
+                            ?>
+                        </p>
+                    </div>
+                </div>
+                <!-- ELEMENT PRICE--->
+                <div class="element__plate__price">
+                    Стоимость товара: &nbsp; <span class="plate__price-span">
+                        <?php echo $elemen_price; ?> ₼
+                    </span>
+                </div>
+            </div>
+            <!-- form to buy element -->
+
+            <div class="element__plate__buying-option">
+                <form action="" method="post">
+                    <!-- BUYING PRICE-->
+                    <div class="element__buying-option_price">
+                        <?php echo $elemen_price; ?>
+                    </div>
+                    <!-- AMOUNT OF ELEMENTS -->
+                    <div class="element__buying-option_number">
+                        <div class="custom-select" style="width:200px;">
+                            <select>
+                                <option value="0">Количество:</option>
+                                <option value="0">Количество:</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- BUTTON TO BUY -->
+                    <div class="element__buying-option_button">
+                        <input type="submit" value="Заказать !">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="element__plate__description2">
+            <?php echo $elemen_description; ?>
         </div>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 
     <?php include "./include/footer.php"; ?>
 </div><!-- WRAPPER ENDS-->
 
-
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>
 
 <script src="./js/script.js"></script>
 </body>

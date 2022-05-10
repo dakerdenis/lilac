@@ -1,8 +1,181 @@
+.wrapper {
+    max-width: 1400px;
+    background-color: #fff;
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+.element__plate__wrapper {
+    padding-top: 75px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.element__plate_flex_wrapper {
+    display: flex;
+    padding: 35px 20px 10px 20px;
+    justify-content: space-between;
+}
+
+.element__plate__description2 {}
+
+.element__plate_gallery {
+    width: 490px;
+    height: 490px;
+}
+
 .element__plate__image {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../img/001.jpg');
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.element__plate__image {}
+
+.element__plate__description {
+    flex: 0 0 28%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.element__plate__name {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.element__plate__number {
+    margin-top: 45px;
+}
+
+.element__plate__price {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.plate__price-span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.element__characters_wrapper {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.element__type__fromDB {}
+
+.element__typeof-span {}
+
+.element__plate__size {}
+
+.element__used_colors {}
+
+.element__used_colors-span {}
+
+.element__used__material {}
+
+.element__used__material-span {}
+
+.element__small__desc {}
+
+.element__small__desc-p {}
+
+.element__plate__buying-option {
+    background-color: #fff;
+    flex: 0 0 27%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+/*the container must be positioned relative:*/
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
 }
