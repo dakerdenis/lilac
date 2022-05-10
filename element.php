@@ -4,9 +4,22 @@
 
 <?php
 
-    $table__id = $_GET['tableid'];
+    $table__id = $_GET['plate_id'];
 
+    $query = "SELECT * FROM catalog WHERE id = $table__id";
 
+    $select_info_plate = mysqli_query($connection, $query);
+
+    $row = mysqli_fetch_assoc($select_info_plate);
+
+    $element_id = $row['id'];
+    $element_title = $row['title'];
+    $elemen_price = $row['price'];
+    $elemen_description = $row['description'];
+    $elemen_size = $row['size'];
+    $elemen_color = $row['color'];
+    $elemen_image = $row['image'];
+    $elemen__category_id = $row['category_id'];
 
 ?>
 
@@ -19,18 +32,23 @@
 <br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="element__plate__wrapper">
         <div class="element__plate_gallery">
-            
+            <div class="element__plate__image" style="background-image: url('./img/<?php echo $elemen_image ?>');"></div>
         </div>
 
         <div class="element__plate__description">
             <!--ELEMENT NAME--->
             <div class="element__plate__name">
-            Супер тарелка номер 1
+            Супер тарелка номер <?php echo $element_id; ?>
             </div>
             <!-- ELEMENT PRICE--->
             <div class="element__plate__price">
-                Стоимость товара: <span class="plate__price-span">24 </span> ₼
+                Стоимость товара: <span class="plate__price-span">
+                <?php echo $elemen_price; ?>        
+            </span> ₼
             </div>
+            <?php
+                echo $elemen_description;
+            ?>
             <!--- ELEMENT CHARACTERISTICS--->
             <div class="element__characters_wrapper">
                 <!-- ELEMENT TYPE--->

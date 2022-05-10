@@ -109,7 +109,7 @@ $result = mysqli_query($connection, $query);
                         </div>
 
                         <div class="c_plate__link_button">
-                            <a href="" class="c_table_link_button-a">ЗАКАЗАТЬ</a>
+                            <a href="./element.php?plate_id=<?php echo $table__id ?>" class="c_table_link_button-a">ЗАКАЗАТЬ</a>
                         </div>
                     </div>
 
