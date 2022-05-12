@@ -112,16 +112,74 @@
 
 /*-------------------*/
 
-.element__plate__buying-option {}
+.element__plate__buying-option {
+    padding: 10px 0px 10px 20px;
+}
 
-.element__buying-option_price {}
+.element__plate__buying-option form {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
-.element__buying-option_number {}
+.element__buying-option_price {
+    font-size: 35px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.element__buying-option_number {
+    display: flex;
+    align-items: center;
+}
 
 .element__buying_number-flex {}
 
 .custom-select {}
 
-.element__buying-option_info {}
+.element__buying-option_info {
+    margin-top: 25px;
+    line-height: 28px;
+}
 
-.element__buying-option_button {}
+.button__flex {
+    background-color: aquamarines;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.element__buying-option_button input {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #fff;
+    border: 1px solid #3E0917;
+    color: #3E0917;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 5px 45px;
+    border-radius: 2px;
+}
+
+.element__buying-option_button input:hover {
+    color: #fff;
+    background-color: #3E0917;
+    cursor: pointer;
+}
+
+.element__plate__description2 {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.element__plate__description2 p {
+    line-height: 35px;
+}
