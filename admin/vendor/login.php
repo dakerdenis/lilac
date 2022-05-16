@@ -31,7 +31,7 @@
                 $_SESSION['wrong_password'] = "Wrong Password or username !";
             } else if($username == $db_username && $password == $db_password){
                 $_SESSION['active'] = "active_user";
-                header("Location: ../includes/page.php");
+                header("Location: ../includes/page.php?page=main");
             } else {
                 header("Location: ../admin.php");
             }
