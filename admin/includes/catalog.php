@@ -44,20 +44,61 @@
 
         $num_of_products++;
     }
+
+    $numof_plates = 0;
+    $numof_toys = 0;
+    $numof_cups = 0;
+    $numof_rest = 0;
+
+
 ?>
 <!---
 Тарелки: 1
 Игрушки: 2
 кружки: 3
-вазы: 4
+прочее: 4
 
 --->
 <div class="element__wrapper">
     <div class="element__name">Полный каталог продукции на сайте </div>
-    <div class="element__content_wrapper">
-        <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
-        <div class="catalog__info">
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+    
+    <div class="catalog__info">
                 Общее количество товара: <?php echo $num_of_products?>
+        </div>
+    <div class="element__content_wrapper">
+
+
+        <div class="catalog__element_desc">
+            <p class="catalog__element_desc-p">Кол-во тарелок:</p>
+            <p class="catalog__element_desc-p2">
+                <?php echo $numof_plates ?>
+            </p>
+            <a class="catalog__element_desc-a" href="#">Увидеть все</a>
+        </div>
+
+        <div class="catalog__element_desc">
+            <p class="catalog__element_desc-p">Кол-во игрушек:</p>
+            <p class="catalog__element_desc-p2">
+                <?php echo $numof_toys ?>
+            </p>
+            <a class="catalog__element_desc-a" href="#">Увидеть все</a>
+        </div>
+
+        <div class="catalog__element_desc">
+            <p class="catalog__element_desc-p">Кол-во кружек:</p>
+            <p class="catalog__element_desc-p2">
+                <?php echo $numof_cups ?>
+            </p>
+            <a class="catalog__element_desc-a" href="#">Увидеть все</a>
+        </div>
+        
+        <div class="catalog__element_desc">
+            <p class="catalog__element_desc-p">Кол-во прочего:</p>
+            <p class="catalog__element_desc-p2">
+                <?php echo $numof_rest ?>
+            </p>
+            <a class="catalog__element_desc-a" href="#">Увидеть все</a>
         </div>
     </div>
 

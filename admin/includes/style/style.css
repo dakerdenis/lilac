@@ -111,4 +111,34 @@ p {
     font-weight: 600;
 }
 
-.element__content_wrapper {}
+.element__content_wrapper {
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid rgb(32, 32, 32);
+    padding: 10px;
+}
+
+.catalog__info {}
+
+.catalog__element_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.catalog__element_desc:nth-child(2n-1) {
+    background-color: rgb(241, 241, 241);
+}
+
+.catalog__element_desc-p {
+    flex: 0 0 20%;
+}
+
+.catalog__element_desc-p2 {
+    flex: 0 0 20%;
+}
+
+.catalog__element_desc-a {
+    flex: 0 0 20%;
+}
