@@ -57,7 +57,7 @@
 
     .select-items {
         position: absolute;
-        background-color: #fff;
+        background-color: rgba(250, 250, 250, 1);
         top: 100%;
         left: 0;
         right: 0;
@@ -211,8 +211,24 @@ $elemen__category_id = $row['category_id'];
             <p><?php echo $elemen_description; ?></p>
         </div>
 
-        <div class="additional__desc_of__order">
-            
+        <div class="additional_info_wrapper">
+            <div class="additional_info_wrapper-image">
+
+            </div>
+            <div class="additional__desc_of__order">
+                <span class="additional__desc_of__order-name">Не нашли то что искали?</span>
+                <p class="additional__desc_of__order-p">Вы можете заказть изготовление уникального товара по вашему усмотрению,вы сами выбираете
+                    <span class="additional__desc_of__order-span">тип</span>,
+                    <span class="additional__desc_of__order-span">цвет</span>,
+                    <span class="additional__desc_of__order-span">размер</span> и другие параметры.
+                    <br> <br>
+                    Вам требуется лишь заполнить форму связи на нашем сайте что бы мы связались с вами в близжайшее время,либо воспользоваться информацией на странице
+                    <a class="additional__desc_of__order-a" href="#">Контакты</a>.
+                </p>
+                <div class="additionl_contact_with_us">
+                    <a class="additional_info_connect_with" href="#">Связаться с нами </a>
+                </div>
+            </div>
         </div>
     </div>
 
