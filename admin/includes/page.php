@@ -60,6 +60,10 @@ if ($_SESSION['active'] == null) {
                         include "../includes/foto.php";
                         break;
 
+                    case 'add_new':
+                        include "../includes/add_new.php";
+                        break;
+
                     default:
                         include "../includes/statistics.php";
                 }

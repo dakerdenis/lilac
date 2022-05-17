@@ -70,7 +70,7 @@
 
 
         <div class="catalog__element_desc">
-            <p class="catalog__element_desc-p">Кол-во тарелок:</p>
+            <p class="catalog__element_desc-p">(1)Кол-во тарелок:</p>
             <p class="catalog__element_desc-p2">
                 <?php echo $numof_plates ?>
             </p>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="catalog__element_desc">
-            <p class="catalog__element_desc-p">Кол-во игрушек:</p>
+            <p class="catalog__element_desc-p">(2)Кол-во игрушек:</p>
             <p class="catalog__element_desc-p2">
                 <?php echo $numof_toys ?>
             </p>
@@ -86,7 +86,7 @@
         </div>
 
         <div class="catalog__element_desc">
-            <p class="catalog__element_desc-p">Кол-во кружек:</p>
+            <p class="catalog__element_desc-p">(3)Кол-во кружек:</p>
             <p class="catalog__element_desc-p2">
                 <?php echo $numof_cups ?>
             </p>
@@ -94,12 +94,16 @@
         </div>
         
         <div class="catalog__element_desc">
-            <p class="catalog__element_desc-p">Кол-во прочего:</p>
+            <p class="catalog__element_desc-p">(4)Кол-во прочего:</p>
             <p class="catalog__element_desc-p2">
                 <?php echo $numof_rest ?>
             </p>
             <a class="catalog__element_desc-a" href="#">Увидеть все</a>
         </div>
+    </div>
+    <!--ADD NEW ELEMENT--->
+    <div class="add_new_element">
+        <a href="#" class="add_new_element_a">Добавить новый товар</a>
     </div>
 
 </div>
