@@ -164,7 +164,7 @@ $elemen__category_id = $row['category_id'];
             <!-- form to buy element -->
 
             <div class="element__plate__buying-option">
-                <form action="" method="post">
+                <form action="./order.php?plate_id=<?php echo $element_id ?>" method="post">
                     <!-- BUYING PRICE-->
                     <div class="element__buying-option_price">
                         <?php echo $elemen_price; ?> ₼
